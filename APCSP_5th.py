@@ -19,12 +19,20 @@ def progress_bar():
         x += 8
         win.update_idletasks()
         time.sleep(.5)
+    if x >= 100:
+        pass
+        # class_code.pack(pady=15)
+        # inputtxt.pack(pady=25)
+        # add_student.pack(pady=28)
+        # students_check.pack()
+    else:
+        pass
 
 
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=150, mode='determinate').pack(pady=10)
 
 start_button = Button(win, text="Join Class",
-                      command=progress_bar).pack(padx=10)
+                      command=progress_bar).pack(pady=10)
 
 win.mainloop()
