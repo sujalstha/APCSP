@@ -13,16 +13,16 @@ AP_Student = []
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=150, mode='determinate').pack(pady=10)
 
-x = 0
+starting_point = 0
 
 
 def progress_bar():
-    global x
+    global starting_point
 
-    while x < 110:
-        progress['value'] = x
+    while starting_point < 110:
+        progress['value'] = starting_point
 
-        x += 8
+        starting_point += 10
         win.update_idletasks()
 
         time.sleep(.5)
