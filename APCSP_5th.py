@@ -1,12 +1,11 @@
-import tkinter
 from tkinter import *
 from tkinter.ttk import *
 import time
 
-win = tkinter.Tk()
+win = Tk()
 win.title("AP Computer Science A")
 win.geometry("550x300")
-win.configure(bg="#00B7C3")
+win.configure(bg="#F98B88")
 
 AP_Student = []
 
@@ -35,6 +34,8 @@ def progress_bar():
 
 progress.pack(pady=10)
 start_button = Button(win, text="Join Class",
+                      bg='#FFCBA4',
+                      fg='white',
                       command=progress_bar).pack(pady=10)
 
 mainloop()
