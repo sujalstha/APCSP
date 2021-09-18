@@ -35,4 +35,4 @@ def progress_bar():
 start_button = Button(win, text="Join Class",
                       command=progress_bar).pack(pady=10)
 
-win.mainloop()
+mainloop()
