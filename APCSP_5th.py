@@ -9,6 +9,9 @@ win.configure(bg="#89C950")
 
 AP_Student = []
 
+progress = Progressbar(win, orient=HORIZONTAL,
+                       length=150, mode='determinate').pack(pady=10)
+
 
 def progress_bar():
     import time
@@ -28,9 +31,6 @@ def progress_bar():
     else:
         pass
 
-
-progress = Progressbar(win, orient=HORIZONTAL,
-                       length=150, mode='determinate').pack(pady=10)
 
 start_button = Button(win, text="Join Class",
                       command=progress_bar).pack(pady=10)
