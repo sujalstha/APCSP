@@ -11,7 +11,14 @@ AP_Student = []
 
 
 def progress_bar():
-    pass
+    import time
+    x = 0
+
+    while x < 110:
+        progress['value'] = x
+        x += 8
+        win.update_idletasks()
+        time.sleep(.5)
 
 
 progress = Progressbar(win, orient=HORIZONTAL,
