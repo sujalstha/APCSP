@@ -11,7 +11,7 @@ win.configure(bg="#89C950")
 AP_Student = []
 
 progress = Progressbar(win, orient=HORIZONTAL,
-                       length=150, mode='determinate').pack(pady=10)
+                       length=200, mode='determinate')
 
 starting_point = 0
 
@@ -27,7 +27,13 @@ def progress_bar():
 
         time.sleep(.5)
 
+    if starting_point >= 110:
+        pass
+    else:
+        pass
 
+
+progress.pack(pady=10)
 start_button = Button(win, text="Join Class",
                       command=progress_bar).pack(pady=10)
 
