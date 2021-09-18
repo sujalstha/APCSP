@@ -1,6 +1,7 @@
 import tkinter
 from tkinter import *
 from tkinter.ttk import *
+import time
 
 win = tkinter.Tk()
 win.title("AP Computer Science A")
@@ -12,10 +13,11 @@ AP_Student = []
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=150, mode='determinate').pack(pady=10)
 
+x = 0
+
 
 def progress_bar():
-    import time
-    x = 0
+    global x
 
     while x < 110:
         progress['value'] = x
@@ -24,7 +26,6 @@ def progress_bar():
         win.update_idletasks()
 
         time.sleep(.5)
-
 
 
 start_button = Button(win, text="Join Class",
