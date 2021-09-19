@@ -12,6 +12,8 @@ AP_Student = []
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=200, mode='determinate')
 
+class_code = Label(win, text= "Class Code: H73JO")
+
 
 def progress_bar():
     import time
@@ -26,7 +28,7 @@ def progress_bar():
         time.sleep(.5)
 
     if starting_point >= 110:
-        pass
+        class_code.pack(pady=15)
     else:
         pass
 
