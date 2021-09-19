@@ -22,17 +22,17 @@ class_code = tkinter.Label(win, text="Class Code: H73JO",
 
 def progress_bar():
     import time
-    starting_point = 0
+    starting_point = 1
 
     while starting_point < 110:
         progress['value'] = starting_point
 
-        starting_point += 10
+        starting_point += 1.5
         win.update_idletasks()
 
-        time.sleep(.5)
+        time.sleep(.1)
 
-    if starting_point >= 110:
+    if starting_point >= 110.5 or starting_point >= 110:
         class_code.pack(pady=15)
     else:
         pass
