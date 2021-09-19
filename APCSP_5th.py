@@ -1,7 +1,6 @@
 import tkinter
 from tkinter import *
 from tkinter.ttk import *
-import time
 
 win = Tk()
 win.title("AP Computer Science A")
@@ -13,11 +12,10 @@ AP_Student = []
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=200, mode='determinate')
 
-starting_point = 0
-
 
 def progress_bar():
-    global starting_point
+    import time
+    starting_point = 0
 
     while starting_point < 110:
         progress['value'] = starting_point
