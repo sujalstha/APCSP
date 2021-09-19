@@ -1,3 +1,4 @@
+import tkinter
 from tkinter import *
 from tkinter.ttk import *
 import time
@@ -33,9 +34,10 @@ def progress_bar():
 
 
 progress.pack(pady=10)
-start_button = Button(win, text="Join Class",
-                      bg='#FFCBA4',
-                      fg='white',
-                      command=progress_bar).pack(pady=10)
+
+start_button = tkinter.Button(win, text="Join Class",
+                              bg='#FFCBA4',
+                              fg='white',
+                              command=progress_bar).pack(pady=10)
 
 mainloop()
