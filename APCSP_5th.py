@@ -7,12 +7,17 @@ win.title("AP Computer Science A")
 win.geometry("550x300")
 win.configure(bg="#F98B88")
 
+font = ("Arial" , 16)
+
 AP_Student = []
 
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=200, mode='determinate')
 
-class_code = Label(win, text= "Class Code: H73JO")
+class_code = tkinter.Label(win, text="Class Code: H73JO",
+                           bg='#F98B88',
+                           fg='white',
+                           font=font,)
 
 
 def progress_bar():
