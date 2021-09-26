@@ -20,7 +20,7 @@ progress = Progressbar(win, orient=HORIZONTAL,
                        length=200, mode='determinate')
 
 class_code = tkinter.Label(win, text="Class Code: H73JO",
-                           bg='#F98B88',
+                           bg='black',
                            fg='white',
                            font=("Times", 15, "bold"))
 
