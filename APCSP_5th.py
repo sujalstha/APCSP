@@ -24,7 +24,7 @@ def progress_bar():
     import time
     starting_point = 0
 
-    while starting_point < 110:
+    while starting_point <= 110:
         progress['value'] = starting_point
 
         starting_point += 10
