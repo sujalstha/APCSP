@@ -24,15 +24,15 @@ def progress_bar():
     import time
     starting_point = 1
 
-    while starting_point < 110:
+    while starting_point < 100:
         progress['value'] = starting_point
 
-        starting_point += 1.5
+        starting_point += 1
         win.update_idletasks()
 
-        time.sleep(.1)
+        time.sleep(.5)
 
-    if starting_point >= 110.5 or starting_point >= 110:
+    if starting_point >= 100:
         class_code.pack(pady=15)
     else:
         pass
@@ -42,7 +42,7 @@ progress.pack(pady=10)
 
 start_button = tkinter.Button(win, text="Join Class",
                               bg='#FFCBA4',
-                              fg='white',
+                              fg='black',
                               command=progress_bar).pack(pady=10)
 
 mainloop()
