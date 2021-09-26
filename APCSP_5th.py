@@ -6,6 +6,7 @@ win = Tk()
 win.title("AP Computer Science A")
 win.geometry("550x300")
 win.configure(bg="#F98B88")
+background_image = PhotoImage(file = "daniele-levis-pelusi-5x-pmgg6ioo-unsplash")
 
 font = ("Arial" , 16)
 
@@ -43,6 +44,8 @@ progress.pack(pady=10)
 start_button = tkinter.Button(win, text="Join Class",
                               bg='#FFCBA4',
                               fg='black',
+                              width=15,
+                              height= 2,
                               command=progress_bar).pack(pady=10)
 
 mainloop()
