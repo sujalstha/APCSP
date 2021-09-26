@@ -6,7 +6,11 @@ win = Tk()
 win.title("AP Computer Science A")
 win.geometry("550x300")
 win.configure(bg="#F98B88")
-background_image = PhotoImage(file = "daniele-levis-pelusi-5x-pmgg6ioo-unsplash")
+background_image = PhotoImage(file = "daniele-levis-pelusi-5x-pmgg6ioo-unsplash.jpg")
+
+# place background image into a label
+place_bg = Label( win, image=background_image).place(x=0, y=0)
+
 
 font = ("Arial" , 16)
 
