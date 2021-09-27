@@ -53,7 +53,6 @@ def progress_bar():
         progress['value'] = starting_point
         starting_point += 10
         win.update_idletasks()
-
         time.sleep(.5)
 
     if starting_point >= 110:
