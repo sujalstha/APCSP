@@ -11,9 +11,9 @@ win.configure(bg="#F98B88")
 background_image = PhotoImage(file="6ei2kv.png")
 
 # place background image into a label
-place_bg = Label( win, image=background_image).place(x=0, y=0)
+place_bg = Label(win, image=background_image).place(x=0, y=0)
 
-font =  tkfontchooser.Font(family="Times",size=12,weight="bold")
+font = tkfontchooser.Font(family="Times", size=12, weight="bold")
 
 AP_Student = []
 
@@ -24,7 +24,6 @@ class_code = tkinter.Label(win, text="Class Code: H73JO",
                            bg='black',
                            fg='white',
                            font=("Times", 15, "bold"))
-
 
 
 def progress_bar():
@@ -52,7 +51,7 @@ start_button = tkinter.Button(win, text="Join Class",
                               fg='white',
                               font=font,
                               width=15,
-                              height= 2,
+                              height=2,
                               command=progress_bar).pack(pady=10)
 
 mainloop()
