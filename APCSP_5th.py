@@ -51,7 +51,6 @@ def progress_bar():
 
     while starting_point <= 110:
         progress['value'] = starting_point
-
         starting_point += 10
         win.update_idletasks()
 
