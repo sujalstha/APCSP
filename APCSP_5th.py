@@ -36,8 +36,6 @@ place_bg = Label(win, image=background_image).place(x=0, y=0)
 
 font = tkfontchooser.Font(family="Times", size=12, weight="bold")
 
-AP_Student = []
-
 progress = Progressbar(win, orient=HORIZONTAL,
                        length=200, mode='determinate')
 
