@@ -9,6 +9,27 @@ win.title("AP Computer Science A")
 win.geometry("500x300")
 win.configure(bg="#F98B88")
 background_image = PhotoImage(file="6ei2kv.png")
+AP_Student = []
+
+
+def student_win():
+    new_win = Toplevel(win)
+    new_win.geometry("550x300")
+    new_win.configure(bg="#89C950")
+    new_win.title("Student| APCS A")
+
+    students = Text(new_win, height=20,
+                    width=len(max(AP_Student, key=len)),
+                    bg="#89C950",
+                    fg="black")
+
+    for x in AP_Student:
+        students.insert(END, '{student}\n'.format(student=x))
+
+    students.pack()
+
+    new_win.mainloop()
+
 
 # place background image into a label
 place_bg = Label(win, image=background_image).place(x=0, y=0)
