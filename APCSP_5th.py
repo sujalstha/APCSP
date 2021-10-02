@@ -55,6 +55,7 @@ def progress_bar():
         win.update_idletasks()
         time.sleep(.5)
 
+
     if starting_point >= 110:
         class_code.pack(pady=15)
     else:
