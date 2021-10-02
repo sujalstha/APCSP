@@ -4,7 +4,7 @@ from tkinter.ttk import *
 import tkfontchooser
 
 win = Tk()
-win.resizable(width=False, height=False)
+#win.resizable(width=False, height=False)
 win.title("AP Computer Science A")
 win.geometry("500x300")
 win.configure(bg="#F98B88")
@@ -73,10 +73,10 @@ def progress_bar():
         time.sleep(.5)
 
     if starting_point >= 110:
-        class_code.pack(pady=15)
-        inputtxt.pack(pady=25)
-        add_student.pack(pady=28)
-        students_check.pack(pady=30)
+        class_code.pack(pady=10)
+        inputtxt.pack(pady=15)
+        add_student.pack()
+        students_check.pack()
     else:
         pass
 
