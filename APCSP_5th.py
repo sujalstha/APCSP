@@ -44,6 +44,15 @@ class_code = tkinter.Label(win, text="Class Code: H73JO",
                            fg='white',
                            font=("Times", 15, "bold"))
 
+students_check = Button(win, text="Students",
+                        command=student_win)
+
+inputtxt = Text(win, bg="white", height=1,
+                width=15)
+
+add_student = Button(win, text="Add Student",
+                     command=add_student)
+
 
 def progress_bar():
     import time
@@ -55,12 +64,13 @@ def progress_bar():
         win.update_idletasks()
         time.sleep(.5)
 
-
     if starting_point >= 110:
         class_code.pack(pady=15)
+        inputtxt.pack(pady=25)
+        add_student.pack(pady=28)
+        students_check.pack()
     else:
         pass
-
 
 
 progress.pack(pady=10)
