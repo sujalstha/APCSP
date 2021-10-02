@@ -9,7 +9,8 @@ win.title("AP Computer Science A")
 win.geometry("500x300")
 win.configure(bg="#F98B88")
 background_image = PhotoImage(file="6ei2kv.png")
-AP_Student = []
+
+AP_Student = [] # Student List
 
 
 def student_win():
@@ -29,6 +30,13 @@ def student_win():
     students.pack()
 
     new_win.mainloop()
+
+
+def add_student():
+  INPUT = inputtxt.get("1.0","end-1c")
+  str(INPUT)
+  AP_Student.append(INPUT)
+  print(AP_Student)
 
 
 # place background image into a label
