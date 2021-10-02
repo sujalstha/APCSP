@@ -76,7 +76,7 @@ def progress_bar():
         class_code.pack(pady=15)
         inputtxt.pack(pady=25)
         add_student.pack(pady=28)
-        students_check.pack()
+        students_check.pack(pady=30)
     else:
         pass
 
