@@ -62,6 +62,7 @@ def progress_bar():
         pass
 
 
+
 progress.pack(pady=10)
 
 start_button = tkinter.Button(win, text="Join Class",
