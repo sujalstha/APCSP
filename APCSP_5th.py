@@ -70,7 +70,6 @@ start_button = tkinter.Button(win, text="Join Class",
                               fg='white',
                               font=font,
                               width=15,
-
                               height=2,
                               command=progress_bar).pack(pady=10)
 
