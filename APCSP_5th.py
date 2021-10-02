@@ -4,13 +4,13 @@ from tkinter.ttk import *
 import tkfontchooser
 
 win = Tk()
-#win.resizable(width=False, height=False)
+# win.resizable(width=False, height=False)
 win.title("AP Computer Science A")
 win.geometry("500x300")
 win.configure(bg="#F98B88")
 background_image = PhotoImage(file="6ei2kv.png")
 
-AP_Student = [] # Student List
+AP_Student = []  # Student List
 
 
 def student_win():
@@ -33,10 +33,10 @@ def student_win():
 
 
 def add_student():
-  INPUT = inputtxt.get("1.0","end-1c")
-  str(INPUT)
-  AP_Student.append(INPUT)
-  print(AP_Student)
+    INPUT = inputtxt.get("1.0", "end-1c")
+    str(INPUT)
+    AP_Student.append(INPUT)
+    print(AP_Student)
 
 
 # place background image into a label
@@ -52,13 +52,19 @@ class_code = tkinter.Label(win, text="Class Code: H73JO",
                            fg='white',
                            font=("Times", 15, "bold"))
 
-students_check = Button(win, text="Students",
+students_check = tkinter.Button(win, text="Students",
+                        bg='black',
+                        fg='white',
+                        font=font,
                         command=student_win)
 
 inputtxt = Text(win, bg="white", height=1,
                 width=15)
 
-add_student = Button(win, text="Add Student",
+add_student = tkinter.Button(win, text="Add Student",
+                     bg='black',
+                     fg='white',
+                     font=font,
                      command=add_student)
 
 
