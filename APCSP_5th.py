@@ -4,7 +4,7 @@ from tkinter.ttk import *
 import tkfontchooser
 
 win = Tk()
-# win.resizable(width=False, height=False)
+win.resizable(width=False, height=False)
 win.title("AP Computer Science A")
 win.geometry("500x300")
 win.configure(bg="#F98B88")
