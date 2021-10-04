@@ -35,7 +35,13 @@ DB_col = wB["Daily Balance (DB)"]
 ADB_col = wB["Allowable Depletion balance (ADB)"]
 Soil_col = wB["Soil moisture"]
 
+DB_list = []
+ADB_list = []
+Soil_moisture_list = []
+
 for x in DB_col:
-    print(x)
+    DB_list.append(x)
+
+print(DB_list)
 
 # print(waterBalance["Allowable Depletion balance (ADB)"])
