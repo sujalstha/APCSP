@@ -11,11 +11,17 @@ J_1 = 0.09
 
 def Calibrate(colm_e):
     formula = F_1 * (colm_e - J_1) * 0.5
+    return formula
+
+
+def H_Colm_val(prev_H, G_row):
+    formula = prev_H + G_row
+    return formula
 
 
 # ADB first value formula : 0.3= F_1*(E4-J_1)*0.5
 
-waterBalance = pd.read_csv('water balanace .csv', usecols=[0])
+waterBalance = pd.read_csv('water balanace .csv', usecols=[])
 
 print(waterBalance)
 
