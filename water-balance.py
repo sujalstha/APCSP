@@ -10,7 +10,8 @@ J_1 = 0.09
 
 
 def Calibrate(colm_e):
-    formula = F_1 *(colm_e - J_1) * 0.5
+    formula = F_1 * (colm_e - J_1) * 0.5
+
 
 # ADB first value formula : 0.3= F_1*(E4-J_1)*0.5
 
