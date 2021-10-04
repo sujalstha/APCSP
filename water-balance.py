@@ -3,5 +3,12 @@
 
 import pandas as pd
 
-waterBalance = pd.read_csv('water balanace .csv', header=0)
+C_1 = 0.90
+F_1 = 15
+H_1 = 0.21
+
+waterBalance = pd.read_csv('water balanace .csv', usecols=[0])
+
 print(waterBalance)
+
+#print(waterBalance["Allowable Depletion balance (ADB)"])
