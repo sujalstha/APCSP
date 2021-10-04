@@ -8,4 +8,4 @@ xlsx_file = Path('Water-Example', 'water balanace example.xlsx')
 data_obj = openpyxl.load_workbook(xlsx_file)
 sheet = data_obj.active
 
-print(sheet)
+print(data_obj)
