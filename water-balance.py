@@ -33,6 +33,7 @@ wB = pd.read_csv('water balanace .csv', usecols=colm)
 
 DB_col = wB["Daily Balance (DB)"]
 ADB_col = wB["Allowable Depletion balance (ADB)"]
+Soil_col = wB["Soil moisture"]
 
 for x in DB_col:
     print(x)
