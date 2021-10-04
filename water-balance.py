@@ -20,8 +20,8 @@ def H_Colm_val(prev_H, G_row):
 
 
 # ADB first value formula : 0.3= F_1*(E4-J_1)*0.5
-
-waterBalance = pd.read_csv('water balanace .csv', usecols=[])
+# 7 col, 34 row
+waterBalance = pd.read_csv('water balanace .csv', usecols=[7])
 
 print(waterBalance)
 
