@@ -3,6 +3,14 @@
 
 import pandas as pd
 
+colm = ['Day', "Rainfall",
+        "Irrigation",
+        "Etc",
+        "Soil moisture",
+        "Total available water",
+        "Daily Balance (DB)",
+        "Allowable Depletion balance (ADB)"]
+
 C_1 = 0.90
 F_1 = 15
 H_1 = 0.21
@@ -21,8 +29,9 @@ def H_Colm_val(prev_H, G_row):
 
 # ADB first value formula : 0.3= F_1*(E4-J_1)*0.5
 # 7 col, 34 row
-waterBalance = pd.read_csv('water balanace .csv', usecols=[7])
+wB = pd.read_csv('water balanace .csv', usecols=colm)
 
-print(waterBalance)
+DB_col = wB["Daily Balance (DB)"]
+
 
 # print(waterBalance["Allowable Depletion balance (ADB)"])
