@@ -32,6 +32,9 @@ def H_Colm_val(prev_H, G_row):
 wB = pd.read_csv('water balanace .csv', usecols=colm)
 
 DB_col = wB["Daily Balance (DB)"]
+ADB_col = wB["Allowable Depletion balance (ADB)"]
 
+for x in DB_col:
+    print(x)
 
 # print(waterBalance["Allowable Depletion balance (ADB)"])
