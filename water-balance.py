@@ -42,6 +42,14 @@ Soil_moisture_list = []
 for x in DB_col:
     DB_list.append(x)
 
-print(DB_list)
+for x in ADB_col:
+    ADB_list.append(x)
+
+for x in Soil_col:
+    Soil_moisture_list.append(x)
+
+del DB_list[0]
+del Soil_moisture_list[0]
+
 
 # print(waterBalance["Allowable Depletion balance (ADB)"])
