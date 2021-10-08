@@ -50,11 +50,9 @@ for x in Soil_col:
 
 del DB_list[0]
 del Soil_moisture_list[0]
-del ADB_list[0]
-
 
 for index, value in enumerate(ADB_list):
-    if index % 10 == 0:
+    if index % 10 == 0 or index % 10 == 1:
         print(index, value)
 
 print('')
