@@ -54,5 +54,4 @@ del ADB_list[0]
 
 for index, value in enumerate(ADB_list):
     print(index, value)
-
 # print(waterBalance["Allowable Depletion balance (ADB)"])
