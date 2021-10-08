@@ -52,10 +52,10 @@ del DB_list[0]
 del Soil_moisture_list[0]
 del ADB_list[0]
 
-for index, value in enumerate(ADB_list) :
+for index, value in enumerate(ADB_list):
     print(index, value)
 
+print('')
 for index, value in enumerate(DB_list):
     print(index, value)
 
-while True:
