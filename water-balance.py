@@ -51,5 +51,7 @@ for x in Soil_col:
 del DB_list[0]
 del Soil_moisture_list[0]
 
+for index, value in enumerate(ADB_list):
+    print(index, value)
 
 # print(waterBalance["Allowable Depletion balance (ADB)"])
