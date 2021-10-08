@@ -50,6 +50,7 @@ for x in Soil_col:
 
 del DB_list[0]
 del Soil_moisture_list[0]
+del ADB_list[0]
 
 '''for index, value in enumerate(ADB_list):
     print(index, value)'''
@@ -60,5 +61,4 @@ print('')
     print(index, value)'''
 
 
-print(ADB_list[0::10])
-print(DB_list[0::10])
+print(ADB_list[0::9])
