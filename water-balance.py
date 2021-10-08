@@ -56,6 +56,7 @@ for index, value in enumerate(ADB_list):
     print(index, value)
 
 print('')
+
 for index, value in enumerate(DB_list):
     print(index, value)
 
