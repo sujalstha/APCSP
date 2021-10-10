@@ -58,4 +58,4 @@ for index, value in enumerate(ADB_list):
 print('')
 
 for index, value in enumerate(DB_list):
-    my_dict = {"Index": index, "Value": value}
+    DB_dict = {"Index": index, "Value": value}
