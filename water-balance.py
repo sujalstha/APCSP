@@ -53,9 +53,12 @@ del Soil_moisture_list[0]
 
 for index, value in enumerate(ADB_list):
     if index % 10 == 0 or index % 10 == 1:
-        print(index, value)
+        pass
+        # print(index, value)
 
 print('')
 
 for index, value in enumerate(DB_list):
     DB_dict = {"Index": index, "Value": value}
+
+print(DB_dict)
