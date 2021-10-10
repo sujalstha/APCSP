@@ -51,10 +51,12 @@ for x in Soil_col:
 del DB_list[0]
 del Soil_moisture_list[0]
 
+calibrate_dict = {"Index": [], "Value": []}
+
 for index, value in enumerate(ADB_list):
     if index % 10 == 0 or index % 10 == 1:
-        pass
-        # print(index, value)
+        calibrate_dict["Index"].append(index)
+        calibrate_dict["Value"].append(value)
 
 print('')
 
